@@ -128,7 +128,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                 });
 
                 // Translate and display submit message
-                var submitMsg = 'Submitting...';
+                var submitMsg = 'Enviando...';
                 if(
                     settings.language !== 'en'
                     && $.ajaxChimp.translations

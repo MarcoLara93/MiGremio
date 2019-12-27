@@ -41,9 +41,7 @@
     margin: 0 auto 15px;
 }
 
-.fix {
-    overflow: hidden;
-}
+
 
 a {
     text-decoration: none;
@@ -73,7 +71,7 @@ img {
 h1,
 h2,
 h3,
-h4,
+
 h5,
 h6 {
     margin: 0 0 10px;
@@ -88,10 +86,10 @@ p span,
 h1 span,
 h2 span,
 h3 span,
-h4 span,
+
 h5 span,
 h6 span {
-    color: #2fccd0;
+    color: black;
 }
 
 html,
@@ -100,7 +98,7 @@ body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.6;
@@ -119,4 +117,81 @@ input:-webkit-autofill:focus {
 #maps {
     width: 100%;
     height: 500px;
+}
+
+.texto-planes{
+    color: rgb(226, 170, 73);
+}
+
+.logoinicio{
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.logotext{
+    display: inline-block;
+    margin: 10px 0px 0px 5px;
+    padding: 10px 0px 0px 0px;
+}
+
+.manosblancas{
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 13px;
+    margin-left: 10px;
+    
+}
+
+.fondo{
+    background-color:rgb(92, 91, 91);
+}
+
+.fondo2{
+    background-color: rgb(88, 85, 85);
+    border-radius: 15px;
+}
+
+.entrega {
+    font-size: 25px;
+    padding: 15px;
+    background-color: black;
+}
+
+.suscribe {
+    background-color: black;
+    border-color: black;
+    
+}
+
+.suscribe:hover {
+    background-color: #0F8DF4;
+    border-color: #0F8DF4;
+}
+
+.footer{
+    background-color: #2D3441;
+}
+
+.imagenofrecemos{
+    width: 100px;
+    margin-left: 30px;
+    
+}
+
+.margen{
+    margin-top: 0px;
+}
+
+
+
+.iphone_descuentos {
+    background-image: url(../MIGREMIO/iphone_descuentos.png);
+    background-repeat: no-repeat;
+    background-size: 76%;
+    background-position: top center;
+    height: 400px;
+}
+
+.info {
+    height: 490px;
 }

@@ -159,17 +159,6 @@ jQuery(document).ready(function ($) {
     client_photo2.on('translate.owl.carousel', function (property) {
         $('.client-photo-list .owl-dot:eq(' + property.page.index + ')').click();
     });
-    /*---------------------------
-        MICHIMP INTEGRATION
-    -----------------------------*/
-    $('#mc-form').ajaxChimp({
-        url: 'http://www.devitfamily.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL
-        callback: function (resp) {
-            if (resp.result === 'success') {
-                $('.subscrie-form input, .subscrie-form button').fadeOut();
-            }
-        }
-    });
     $('.price-table').on('mouseenter', function () {
         $('.price-table').removeClass('active');
         $(this).addClass('active');
@@ -226,20 +215,6 @@ jQuery(document).ready(function ($) {
             $('.error').show().text(e);
         }
     }
-    /* Instagram-jQuery */
-    jQuery.fn.spectragram.accessData = {
-        accessToken: '2136707.4dd19c1.d077b227b0474d80a5665236d2e90fcf',
-        clientID: '4dd19c1f5c7745a2bca7b4b3524124d0'
-    };
-
-    $('.instagram').spectragram('getUserFeed', {
-        query: 'adrianengine', //this gets adrianengine's photo feed
-        size: 'small',
-        max: 9,
-    });
-     $('.feature-area a').on('mouseenter', function () {
-        $(this).tab('show');
-    });
 }(jQuery));
 
 

@@ -8,16 +8,14 @@
 */
 
 .black-bg {
-    background-color: #2d3441;
+    background-color: #454546;
 }
 
 .gray-bg {
     background-color: #f7f7f9;
 }
 
-.fix {
-    overflow: hidden;
-}
+
 
 .text-white a,
 .text-white {
@@ -34,11 +32,11 @@
 }
 
 .btn-icon span {
-    background-color: #2fccd0;
-    border: 1px solid #2fccd0;
+    background-color: white;
+    border: 1px solid white;
     border-radius: 50%;
     box-shadow: 2px 2px 5px 0 rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+    color: black;
     display: inline-block;
     font-size: 16px;
     height: 40px;
@@ -55,13 +53,24 @@
 
 .btn-icon:hover span {
     background-color: #ffffff;
-    color: #2fccd0;
+    color: black;
 }
 
 .relative {
     position: relative;
 }
 
+.descuentoimagen{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.migremiopreguntas{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*----------------------
 Header-Background
@@ -85,17 +94,20 @@ Header-Background
 }
 
 .overlay-bg {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #029dfd 0%, #029dfd 0%, #16c9f6 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #029dfd 0%, #029dfd 0%, #16c9f6 100%) repeat scroll 0 0;
+    background-image: url('../MIGREMIO/inicio.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
+
 .dewo:after {
-    background: url("../images/header-dew.png") no-repeat scroll center bottom -10px / 100% auto;
+    background-color: black;
     bottom: 0;
     content: "";
     height: 100%;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     position: absolute;
     width: 100%;
@@ -109,8 +121,8 @@ Header-Background
 .section-bg #video-background {
     bottom: 0;
     left: 0;
-    min-height: 100%;
-    min-width: 100%;
+    height: 100%;
+    width: 100%;
     opacity: 0.3;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     position: absolute;
@@ -181,7 +193,7 @@ Angle-background
 .border-icon {
     border: 1px solid;
     border-radius: 50%;
-    color: #50d1c0;
+    color: darkgrey;
     font-size: 20px;
     height: 50px;
     line-height: 2.7;
@@ -220,7 +232,7 @@ Angle-background
     border: medium none;
     border-radius: 50%;
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.6);
-    color: #50d1c0;
+    color: black;
     height: 60px;
     text-align: center;
     width: 60px;
@@ -238,7 +250,7 @@ Angle-background
 }
 
 .list_screen_slide:after {
-    content: url("../images/screen/phone.png");
+    
     left: 50%;
     position: absolute;
     top: 50%;
@@ -275,7 +287,7 @@ Angle-background
 }
 
 .social-menu a:hover {
-    background-color: #50d1c0;
+    background-color: #0C8FF9;
     box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
     color: #ffffff;
 }
@@ -337,14 +349,14 @@ Angle-background
 
 .btn.btn-white:hover {
     background-color: #ffffff;
-    color: #2fccd0;
+    color: black;
 }
 
 .btn.btn-link.active:hover,
 .btn.btn-link {
-    border: 1px solid #50d1c0;
+    border: 1px solid black;
     border-radius: 100px;
-    color: #50d1c0;
+    color: black;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -359,7 +371,7 @@ Angle-background
 .btn.btn-link.active,
 .btn.btn-link:hover,
 .price-table.active .btn.btn-link {
-    background-color: #50d1c0;
+    background-color: black;
     box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.2);
     color: #ffffff;
     -webkit-transform: translateY(-3px);
@@ -477,15 +489,19 @@ address {
     background: linear-gradient(to right, transparent 0%, transparent 0%, transparent 100%);
 }
 
+.ofrecemos{
+    line-height: 26px;
+}
+
 .mainmenu-area.affix {
-    background: #1e5799;
-    background: -webkit-linear-gradient(left, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
-    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#16c9f6', GradientType=1);
-    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
-    padding: 0;
-    position: fixed;
-    z-index: 9999;
+    
+    
+    background: black;
+    
+  
+    padding: 15px;
+    width: 100%;
+    
 }
 
 .navbar-brand .logo-text {
@@ -521,12 +537,12 @@ address {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
-
+/*
 #mainmenu li.active a:before {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
-
+*/
 .price-table .amount,
 .price-table .price-title {
     -webkit-transition: 0.3s;
@@ -535,7 +551,11 @@ address {
 
 .price-table.active .amount,
 .price-table.active .price-title {
-    color: #50d1c0;
+    color: rgb(226, 170, 73);
+}
+
+.texto-planes{
+    color: rgb(226, 170, 73);
 }
 
 .price-table {
@@ -579,8 +599,8 @@ address {
 }
 
 #scrollUp {
-    background-color: #50d1c0;
-    border: 1px solid #50d1c0;
+    background-color: black;
+    border: 1px solid white;
     border-radius: 2px;
     bottom: 30px;
     color: #ffffff;
@@ -592,7 +612,8 @@ address {
 }
 
 #scrollUp:hover {
-    background-color: #55c4b5;
+    background-color: rgb(68, 67, 67);
+    color: black;
 }
 
 .img-full {
@@ -834,4 +855,8 @@ Pagination
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.footer{
+    background-color: red;
 }

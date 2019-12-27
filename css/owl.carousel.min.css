@@ -240,8 +240,9 @@
 .list_screen_slide .owl-controls .owl-next {
     border: 1px solid;
     border-radius: 100%;
+    background-color: black;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0);
-    color: #50d1c0;
+    color: white;
     height: 40px;
     left: 0;
     line-height: 3;
@@ -259,10 +260,10 @@
 
 .list_screen_slide .owl-controls .owl-prev:hover,
 .list_screen_slide .owl-controls .owl-next:hover {
-    background-color: #50d1c0;
-    border-color: #50d1c0;
+    background-color: white;
+    border-color: black;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
-    color: #ffffff;
+    color: black;
 }
 
 .list_screen_slide .owl-controls .owl-next {
