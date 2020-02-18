@@ -1,9 +1,9 @@
 <?php
 
-$nombre = $_POST['nombre'];
+$nombre = $_POST['name'];
 $mail = $_POST['email'];
-$asunto = $_POST['asunto'];
-$empresa = $_POST['mensaje'];
+$asunto = $_POST['subject'];
+$mensaje = $_POST['message'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
@@ -12,11 +12,11 @@ $header .= "Content-Type: text/plain";
 
 $mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
 $mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
+$mensaje .= "Mensaje: " . $mensaje . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'diferentt.marco@gmail.com';
-$asunto = 'Mensaje de mi sitio web Mi Gremio';
+$para = 'diferentt.dev@gmail.com';
+$asunto = 'Mensaje de sitio web Mi Gremio';
 
 if(mail($para, $asunto, utf8_decode($mensaje), $header)) {
     echo "Mensaje enviado correctamente.";
