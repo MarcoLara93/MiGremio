@@ -193,5 +193,13 @@ input:-webkit-autofill:focus {
 }
 
 .info {
-    height: 535px;
+    height: 450px;
+}
+
+.notshow{
+    display:none;
+}
+
+.blackmenu{
+    font-size: 2rem;
 }
